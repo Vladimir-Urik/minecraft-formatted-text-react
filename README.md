@@ -2,6 +2,14 @@
 
 This component allows you to display Minecraft-style text (that follow Minecraft's [section sign formatted text](https://minecraft.fandom.com/wiki/Formatting_codes)) within React
 
+## Features
+
+* TypeScript Support
+* Customize Prefix
+* Custom Colors
+* Supports ESM and CJS
+* Supports Obfuscated Text
+
 
 ## Installation
 
@@ -16,14 +24,6 @@ import MinecraftText from 'minecraft-format-text-react'
 ...
 <MinecraftText>§lHello §cworld!</MinecraftText>
 ```
-
-## Features
-
-* TypeScript Support
-* Customize Prefix
-* Custom Colors
-* Supports ESM and CJS
-* Supports Obfuscated Text
 
 ## Options (Props)
 

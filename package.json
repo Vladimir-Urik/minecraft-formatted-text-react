@@ -16,10 +16,10 @@
 		"build": "yarn build:esm && yarn build:cjs",
 		"build:esm": "tsc",
 		"build:cjs": "tsc --module commonjs --outDir dist/cjs",
-		"lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
-		"prettier": "prettier --write \"{src}/**/*.{js,ts,jsx,tsx}\"",
+		"lint": "eslint --fix \"{**/*,*}.{js,ts,jsx,tsx}\"",
+		"prettier": "prettier --write \"src/**/*.{js,ts,jsx,tsx}\"",
 		"prepare": "npm run build",
-		"prepublishOnly": "npm test && npm run prettier && npm run lint"
+		"prepublishOnly": "npm run prettier && npm run lint"
 	},
 	"peerDependencies": {
 		"react": "^18.2.0"

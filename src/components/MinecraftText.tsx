@@ -71,7 +71,7 @@ export default function MinecraftText(props: Props) {
 	const { children } = props
 	prefix = prefix ? prefix : '§'
 
-	const segments = (`&r${children}` || '&r').split(new RegExp(`(?=${prefix}r)`, 'g'))
+	const segments = (`${prefix}r${children}` || `${prefix}r`).split(new RegExp(`(?=${prefix}r)`, 'g'))
 	return (
 		<div>
 			{segments.map((segment, index) => (

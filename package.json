@@ -1,6 +1,6 @@
 {
 	"name": "minecraft-formatted-text-react",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A React component that renders Minecraft-formatted text",
 	"main": "./dist/cjs/index.js",
 	"module": "./dist/esm/index.js",
@@ -43,9 +43,9 @@
 		"README.md"
 	],
 	"keywords": [
-  "react",
-  "typescript",
-  "minecraft",
-	"component"
-]
+		"react",
+		"typescript",
+		"minecraft",
+		"component"
+	]
 }

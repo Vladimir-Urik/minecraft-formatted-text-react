@@ -47,5 +47,8 @@
 		"typescript",
 		"minecraft",
 		"component"
-	]
+	],
+	"dependencies": {
+		"tslib": "^2.5.0"
+	}
 }

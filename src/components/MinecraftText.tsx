@@ -105,14 +105,14 @@ function MinecraftInnerText(props: Props) {
 			<span
 				style={{
 					color: (colors || defaultColors)[letterMap[segment[1] as ColorLetter]]
-				}}>
+				}} className="mc-font">
 				{segment.substring(2)}
 				<MinecraftInnerText {...props}>{segments.slice(1).join('')}</MinecraftInnerText>
 			</span>
 		)
 	} else if (obfustcated.test(segment)) {
 		return (
-			<span>
+			<span className="mc-font">
 				<ObfuscatedText text={segment.substring(2)} />
 				<MinecraftInnerText {...props}>{segments.slice(1).join('')}</MinecraftInnerText>
 			</span>
@@ -122,7 +122,7 @@ function MinecraftInnerText(props: Props) {
 			<span
 				style={{
 					fontWeight: 'bold'
-				}}>
+				}} className="mc-font">
 				{segment.substring(2)}
 				<MinecraftInnerText {...props}>{segments.slice(1).join('')}</MinecraftInnerText>
 			</span>
@@ -132,7 +132,7 @@ function MinecraftInnerText(props: Props) {
 			<span
 				style={{
 					fontStyle: 'italic'
-				}}>
+				}} className="mc-font">
 				{segment.substring(2)}
 				<MinecraftInnerText {...props}>{segments.slice(1).join('')}</MinecraftInnerText>
 			</span>
@@ -142,7 +142,7 @@ function MinecraftInnerText(props: Props) {
 			<span
 				style={{
 					textDecoration: 'underline'
-				}}>
+				}} className="mc-font">
 				{segment.substring(2)}
 				<MinecraftInnerText {...props}>{segments.slice(1).join('')}</MinecraftInnerText>
 			</span>
@@ -152,7 +152,7 @@ function MinecraftInnerText(props: Props) {
 			<span
 				style={{
 					textDecoration: 'line-through'
-				}}>
+				}} className="mc-font">
 				{segment.substring(2)}
 				<MinecraftInnerText {...props}>{segments.slice(1).join('')}</MinecraftInnerText>
 			</span>
@@ -165,13 +165,13 @@ function MinecraftInnerText(props: Props) {
 					textDecoration: 'none',
 					color: 'white',
 					fontWeight: 'initial'
-				}}>
+				}} className="mc-font">
 				{segment.substring(2)}
 				<MinecraftInnerText {...props}>{segments.slice(1).join('')}</MinecraftInnerText>
 			</span>
 		)
 	} else {
-		return <span>{segment}</span>
+		return <span className="mc-font">{segment}</span>
 	}
 }
 
